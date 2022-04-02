@@ -1,0 +1,525 @@
+body{
+    margin: 0 17.5 0 17.5;
+    padding: 0px;
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#ffffff ;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+p{
+    text-decoration-style:none ;
+}
+header{
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0  ;
+    background-color:#ffffff ;
+    box-shadow: 0 3px 3px 0 #20212447;
+    position: fixed;
+    top: -5px;
+    box-shadow: 0 3px 3px 0 #20212447;
+    z-index: 50;
+}
+/*  LOGO  */
+header .izquierda{
+    margin-left: 2.5%;
+    margin-top: 10px;
+}
+header .izquierda a img{
+    width: 190px;
+    height: 80px;
+    
+}
+/*  NAV BAR*/
+ header .derecha{
+    padding-right: 50px;
+    justify-content: flex-end;   
+    margin: auto;    
+    width: inherit;
+    display: flex; 
+    vertical-align: middle;
+}
+header .derecha ul li a{
+    display: block;
+    
+    
+   
+}
+header .derecha ul li {
+    margin: auto;
+    
+}
+header .derecha ul a.carta{
+    border-bottom: 3px solid #bdc3e5; 
+}
+header .derecha li a.barra:hover{        
+    border-bottom: 3px solid rgb(189, 195, 229); 
+}
+
+
+header nav .navBar{    
+    display: flex;
+    list-style: none;    
+}
+header nav .navBar a{
+    margin-right: 10px;
+    color: #000000;
+    
+    
+}
+header nav .navBar .menu-icon{
+    /* background-image: url('assets/Logo\ el\ gringo\ burguer.png'); */
+
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+header nav .navBar img{
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    align-items: baseline;
+}
+
+header nav .navBar img:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+/* ---PRODUCT-- */
+.carril{
+    padding: 20px 0 20px 0;
+}
+.carril{
+    margin-top: 80px;
+}
+ul.breardcrum{
+    display: flex;
+    list-style: none;
+    padding-left:5%;
+    
+}
+ul.breardcrum li{
+    padding-right: 20px;
+    
+}
+ul.breardcrum span{
+    background-image:url('assets/icons/arrow-right.png') ;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size:cover ;
+    width: 15px;
+    height: 15px;
+    margin-top: 9px;
+    color: black;
+}
+/* ---PRESENTATION--- */
+main.presentation{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+main .gallery{
+    width: 45%;
+    height: auto;
+    /* border: 2px solid green; */
+    /* box-shadow: 0 1px 6px 0 #20212447; */
+    padding-top: 10px;
+    text-align: l;
+}
+main .gallery img.principal{
+    width: 455px;
+    height:350px ;
+    /* border: 2px solid blue; */
+    text-align: left;
+    margin-left: 15%;
+    
+    
+}
+main .gallery .gallery-group{
+    /* display: flex; */
+    width: auto;
+    height: 150px;
+    /* border: 2px solid rgb(247, 0, 255); */
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 15%;
+}
+main .gallery .gallery-group img{
+    width: 120px;
+    height: 90px;
+    border: 1px solid;
+    margin: 0 10px 0 10px;
+}
+main .detail{
+    width: 45%;
+    height: auto;
+    /* border: 2px solid purple; */
+    /* padding-top: 30px; */
+    /* text-align: center; */
+    /* box-shadow: 0 1px 6px 0 #20212447; */
+}
+main .detail h2{
+    margin: 15px;
+    font-size: 40px;
+}
+main .detail p{
+    width: 70%;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    padding-left: 2%;
+}
+main .detail h3{
+    font-size: 20px;
+    padding-left: 2%;
+}
+main .detail ul{
+    display: flex;
+    padding-left:0 ;
+    padding-left: 2%;
+}
+main .detail ul input{
+    width: 15px;
+    height: 15px;
+    background-color:orange ;
+    
+    margin-top: 10px;
+}
+main .detail ul li{
+    list-style: none;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left:10px ;
+}
+main .detail .cantidad{
+    display: flex;
+    padding-left: 2%;
+}
+main .detail .boton{
+    margin-left: 30%;
+}
+main .detail .cantidad{
+    padding-left: 10px;
+}
+main .detail .cantidad h3{
+    padding: 0 10px 0 10px;
+}
+main .detail .cantidad input{
+    width: 45px;
+    margin-top: 15px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+main .detail .buy{
+    background-color: rgb(45, 134, 194);
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+main .detail .buy:hover{
+    background-color: rgb(96, 156, 196);
+    color:white;
+}
+main .detail .buy:active{
+    background-color: rgb(38, 90, 124);
+}
+
+article{
+    text-align: center;
+
+}
+article span{
+    padding: 0 10px 0 10px;
+    font-size: 25px;
+}
+article span:hover{
+    border-bottom: 5px solid rgb(87, 87, 139); 
+}
+article span.Description{
+    border-bottom: 5px solid rgb(87, 87, 139);   
+}
+article p{
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+/* p.divide{
+    background-color: gray;
+    height: 2px;
+    padding: 0 20px 0 20px;
+} */
+.opciones{
+    font-size: 20px;
+    text-align: center;
+    border-top: 2px solid gray;
+}
+.opciones span{
+    background-color: white;
+    top: -15px;
+    position:relative ;
+    padding: 0 50px 0 50px;
+}
+
+section{
+    padding: 0 20px 0 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/*--- CARRUSEL DE PRODUCTOS---*/
+section .section{
+    display: flex;
+}
+section div.item-container{
+    border: 0.5px solid #20212447;
+    /* box-shadow: 0 1px 6px 0 #20212447; */
+    padding: 1px;
+    margin: 25px;
+    height: 300px;
+    width:250px ;
+    
+}
+section .sellest{
+    padding: 20px 20px 20px 0;
+    height: 150px;
+    background-color: rgb(250, 220, 209) ;
+    text-align: center;
+    
+}
+section .sellest .sellestPhoto {
+    /* width: 300px; */
+    height: 165px;
+    z-index: 100;
+    
+}
+/* section .sellest .sellestPhoto:hover{
+    opacity: 190%;
+    z-index: 10;
+    filter: grayscale(80%)
+    /* background-color:rgba(97, 48, 48, 0.116) ; 
+} */
+section .sellest .blur{
+    display: flex;
+    
+    text-align: center;
+    vertical-align: middle;
+    height: 189px;
+    width: 250px;
+    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: -189px;
+    z-index: 1;
+    
+    
+
+}
+section .sellest .blur:hover{
+    z-index: 100;
+    background-color:rgba(0, 0, 0, 0.294);
+    filter: grayscale(10%)   
+}
+section .sellest .blur:hover > #boton{
+    display: block;
+}
+section .sellest span{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    width: 35px;
+    height: 35px;
+    border-radius: 30%;
+    /* background-color:rgb(253, 237, 255) ; */
+    margin-top: 90px;
+    margin-left: 60px;
+    z-index: 1;
+    /* background-color: rgba(5, 5, 5, 0.335); */
+    background-color: rgb(136, 136, 136);
+    display: none;
+    
+}
+section .sellest span:hover{
+    background-color:rgba(255, 255, 255, 0.87);
+    
+}
+section .sellest span:active{
+    background-color:rgb(189, 195, 229);
+}
+section a.sellestPhoto{
+    width: 180px;
+    height: 120px;
+}
+section .specification{
+    justify-content: center;
+    width: 230px;
+    margin: auto;
+    font-size: 18px;
+} 
+section img.arrow-icon{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    text-align: center;
+    background-color:rgb(46, 46, 95) ;
+}
+section img.arrow-icon:hover{
+    background-color: rgb(89, 89, 121);
+}
+section img.arrow-icon:active{
+    background-color:rgb(46, 46, 95) ;
+}
+
+/*--- FOOTER ---*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fadcd1;
+    padding-right: 0;
+    padding: 0 0 20px 0;
+    height: auto;
+
+}
+footer .footer-left {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+footer .footer-left h4{
+    text-align: left;
+    font-size: 25px;
+    
+    margin: 0 0 18px 0;
+}
+footer .footer-left p{
+    margin: 0px 0px;
+    text-align: left;
+    text-decoration-style: none;
+    font-size: 20px;
+    
+}
+footer .footer-left p a{
+    color: black;
+}
+footer .footer-middle{
+    margin-left: 20px;
+}
+footer .footer-middle .logo-footer{
+    text-align: center;
+    /* border: 2px solid red; */
+    height: auto;
+}
+footer .footer-middle .logo-footer a img{
+    width: 190px;
+    height: 80px;
+    padding: 0;
+}
+footer .footer-middle .follow{
+    display: flex;
+    justify-content: center;
+    height: px;
+    /* margin: 5px; */
+}
+footer .footer-middle .follow h3{
+    margin-top: 18px;
+}
+
+footer .footer-middle .footer-icon div{
+    justify-content: center;
+
+    /* width: 40px;
+    height: 40px; */
+    padding: 0;
+    
+}
+footer .footer-middle .insta{
+    background-image: url("assets/icons/logotipo-de-instagram.png");
+    background-size: cover;
+    
+    z-index: 100;
+    
+}
+footer .footer-middle .insta:hover{
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+    background-image:url("assets/icons/instagram.png") ;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    z-index: 120;
+    /* border-radius: 15px; */
+    /* padding: 0; */    
+}
+footer .footer-middle .face{
+    background-image: url("assets/icons/facebook.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    
+}
+
+footer .footer-middle .face:hover{
+    /* background-color: #0e8df2; */
+    border-radius: 50%;
+    background-image: url("assets/icons/facebook2.png");
+    background-size: cover;
+    z-index: 120;
+    width: 40px;
+    height: 40px;
+    
+
+}
+footer .footer-middle .whats{
+    background-image: url("assets/icons/whatsapp.png");
+    background-size: cover;
+    width: 49px;
+    height: 49px; 
+    z-index: 100;
+    
+}
+footer .footer-middle .whats:hover{
+    background-image: url("assets/icons/whatsapp2.png");
+    background-size: cover;
+    z-index: 120;
+}
+
+
+footer .footer-middle .follow{
+    text-align: center;
+}
+footer .footer-middle .footer-icon{
+    display: flex;
+    width: 120;
+    
+    justify-content: center;
+}
+footer .footer-right{
+    text-align: center;
+    padding-right: 30px;
+    font-size: larger;
+}
+footer .footer-right img{
+    margin-top: 40px;
+    margin-right: 50px;
+}

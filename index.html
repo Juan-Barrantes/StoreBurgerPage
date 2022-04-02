@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" href="assets/icons/icon.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="carrusel.css">
+  <script src="jquery/jquery-3.6.0.js"></script>
+  <script src="jquery/jquery.slides.js"></script>
+  <script>
+      $(function(){
+        $(".slides").slidesjs({
+          width: 900,
+          height: 350,
+          play: {
+              active: true,
+                  // [boolean] Generate the play and stop buttons.
+                  // You cannot use your own buttons. Sorry.
+              effect: "fade",
+                  // [string] Can be either "slide" or "fade".
+              interval: 3000,
+                  // [number] Time spent on each slide in milliseconds.
+              auto: true,
+                  // [boolean] Start playing the slideshow on load.
+              swap: true,
+                  // [boolean] show/hide stop and play buttons
+              pauseOnHover: true,
+                  // [boolean] pause a playing slideshow on hover
+              restartDelay: 2000
+                  // [number] restart delay on inactive slideshow
+          }
+        });
+      });
+  </script>
+</head>
+
+<body>
+  <header >
+    <div class="izquierda">
+      <a href="index.html">
+        <img class="logo" src="assets/icons/Logo el gringo burguer.png" alt="">
+      </a>
+
+    </div>
+    <div class="derecha">
+      <nav>
+        <ul class="navBar">
+          <li><a class="inicio" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="barra" href="carta.html">Carta</a>
+          </li>
+          <li>
+            <a class="barra" href="nosotros.html">Nosotros</a>
+          </li>
+          <!-- <li> -->
+          <a class="barra" href="cuenta.html">
+            <img src="assets/icons/outline_person_black_24dp.png" alt="">
+          </a>
+          </li>
+          <li class="carrito">
+            <a href="cesta.html"><img src="assets/icons/outline_shopping_basket_black_24dp.png" alt=""></a></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Carrusel -->
+  <main>
+    
+    <!-- <section class="slides">
+      <a href="#"><img src="assets/slider/img1.jpg"></a>
+      <a href="#"><img src="assets/slider/img2.jpg"></a>
+      <a href="#"><img src="assets/slider/img3.jpg"></a>
+      <a href="#"><img src="assets/slider/img4.jpg"></a>
+      <a href="#"><img src="assets/slider/img5.jpg"></a>
+  </section> -->
+  <section class="fotos">
+    <form>
+
+			<input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+			<input type="radio" name="fancy" value="hearts" id="hearts" />
+			<input type="radio" name="fancy" value="spades" id="spades" />
+			<input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+			<label for="clubs"><img src="assets/slider/img1.jpg" alt=""></label>
+      <label for="hearts"><img src="assets/slider/img2.jpg" alt=""></label>
+      <label for="spades"><img src="assets/slider/img3.jpg" alt=""></label>
+      <label for="diamonds"><img src="assets/slider/img4.jpg" alt=""></label>
+
+			<div class="keys">._.</div>
+	</form>
+  </section>
+    
+
+
+
+
+    <!-- --- LAS MÁS PEDIDAS --- -->
+    <div class="title">
+      <p>Las más pedidas</p>
+      <p style="color: #20212447;">Nuestros clientes siempre escogen lo mejor</p>
+    </div>
+    <br>
+    <section class="favorites">
+      <div class="item-container">
+
+        <div style="background-image: url(assets/logotipo-de-instagram.png);" class="sellest">
+
+          <img src="assets/pictures/item1.png" alt="" class="sellestPhoto">
+          
+          <div class="blur">
+            <span id="boton" style="background-image: url('assets/icons/addItem.png');"></span>
+            <br>
+            <span id="boton" style="background-image: url('assets/icons/eye.png');"><a href="product.html">@</a></span>
+            
+           
+          </div>
+
+        </div>
+
+        <div class="specification">
+          <div class="starScore">
+            <form id="stars">
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+
+                <label for="radio1">★</label>
+
+                <input id="radio2" type="radio" name="estrellas" value="4">
+
+                <label for="radio2">★</label>
+
+                <input id="radio3" type="radio" name="estrellas" value="3">
+
+                <label for="radio3">★</label>
+
+                <input id="radio4" type="radio" name="estrellas" value="2">
+
+                <label for="radio4">★</label>
+
+                <input id="radio5" type="radio" name="estrellas" value="1">
+
+                <label for="radio5">★</label>
+              </p>
+            </form>
+          </div>
+          <p>Hamburguesa Gringo doble especial</p>
+          <p style="font-weight: bolder; ;" ;>S/19.90</p>
+        </div>
+      </div>
+      <div class="item-container">
+
+        <div style="background-image: url(assets/logotipo-de-instagram.png);" class="sellest">
+
+          <img src="assets/pictures/item2.png" alt="" class="sellestPhoto">
+          
+          <div class="blur">
+            <span id="boton" style="background-image: url('assets/icons/addItem.png');"></span>
+            <br>
+            <span id="boton" style="background-image: url('assets/icons/eye.png');"><a href="product.html">@</a></span>
+            
+           
+          </div>
+
+        </div>
+
+        <div class="specification">
+          <div class="starScore">
+            <form id="stars">
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+
+                <label for="radio1">★</label>
+
+                <input id="radio2" type="radio" name="estrellas" value="4">
+
+                <label for="radio2">★</label>
+
+                <input id="radio3" type="radio" name="estrellas" value="3">
+
+                <label for="radio3">★</label>
+
+                <input id="radio4" type="radio" name="estrellas" value="2">
+
+                <label for="radio4">★</label>
+
+                <input id="radio5" type="radio" name="estrellas" value="1">
+
+                <label for="radio5">★</label>
+              </p>
+            </form>
+          </div>
+          <p>Gringo Burger Clásica</p>
+          <p style="font-weight: bolder; ;" ;>S/12.00</p>
+        </div>
+      </div>
+      <div class="item-container">
+
+        <div style="background-image: url(assets/logotipo-de-instagram.png);" class="sellest">
+
+          <img src="assets/pictures/item3.png" alt="" class="sellestPhoto">
+          
+          <div class="blur">
+            <span id="boton" style="background-image: url('assets/icons/addItem.png');"></span>
+            <br>
+            <span id="boton" style="background-image: url('assets/icons/eye.png');"><a href="product.html">@</a></span>
+            
+           
+          </div>
+
+        </div>
+
+        <div class="specification">
+          <div class="starScore">
+            <form id="stars">
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5">
+
+                <label for="radio1">★</label>
+
+                <input id="radio2" type="radio" name="estrellas" value="4">
+
+                <label for="radio2">★</label>
+
+                <input id="radio3" type="radio" name="estrellas" value="3">
+
+                <label for="radio3">★</label>
+
+                <input id="radio4" type="radio" name="estrellas" value="2">
+
+                <label for="radio4">★</label>
+
+                <input id="radio5" type="radio" name="estrellas" value="1">
+
+                <label for="radio5" style="color: gray;">★</label>
+              </p>
+            </form>
+          </div>
+          <p>Gringo Burger doble</p>
+          <p style="font-weight: bolder; ;" ;>S/18.50</p>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+
+    <aside class="moreOfUs">
+      <h2>Encuentranos en: </h2>
+      <div class="content">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.8986616179068!2d-77.04540615375045!3d-12.092426757821286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c97866c4d619%3A0x2144dc14f0b28345!2sMaria%20Almenara!5e0!3m2!1ses-419!2spe!4v1620339255281!5m2!1ses-419!2spe"
+            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="map-right">
+            <p>
+              Un nuevo local hecho para ti
+            </p>
+            <span class="locationIcon"></span>
+            <span>Av. dos de Mayo 1401-1301, San Isidro 15073</span>
+          </div>
+
+        </div>
+        <div class="video">
+          <div class="info">
+            <h2>¡Tenemos delivery propio!</h2>
+            <p>Queremos que tus burguers lleguen PERFECTAS.</p>
+            <p>Por eso tenemos nuestro delivery propio con todos los protocolos para cuidarte a ti y a nuestros
+              trabajadores
+            </p>
+          </div>
+
+
+          <div id="delivery">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Felgringoburger%2Fvideos%2F2082749428534395%2F&show_text=false&width=380"
+              width="304" height="380.8" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              allowFullScreen="true"></iframe>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <br>
+
+  <!-- ---- FOOTER --- -->
+  <footer>
+    <div class="footer-left">
+      <h4>Empresa</h4>
+      <p><a href="nosotros.html">Nosotros</a></p>
+      <p><a href="carta.html">Carta</a></p>
+      <p>Escribenos a </p>
+      <p class="email"><a href="mailto:elgringoburger@gmail.com">elgringoburger@gmail.com</a></p>
+
+    </div>
+    <div class="footer-middle">
+      <div class="logo-footer">
+        <a href="">
+          <img src="assets/icons/Logo el gringo burguer.png" alt="logo">
+        </a>
+      </div>
+      <div>
+        <div class="follow">
+          <p>_____</p>
+          <h3> Siguenos en: </h3>
+          <p>_____</p>
+        </div>
+        <div class="footer-icon">
+          <a href="https://www.instagram.com/elgringoburger/?hl=es-la" target="_blank">
+            <div class="insta" title="Instagram" style="width: 48px;
+    height: 48px;">
+            </div>
+          </a>
+          <a href="https://www.facebook.com/elgringoburger" target="_blank">
+            <div class="face" style="width: 50px;height: 50px;padding: 0;">
+            </div>
+          </a>
+          <a href="#" target="_blank">
+            <div class="whats" title="whatsapp">
+            </div>
+          </a>
+        </div>
+      </div>
+      <span class="copyright">
+        &copy; Copyright 2021 GRINGO BURGER todos los derechos reservados
+      </span>
+    </div>
+    <div class="footer-right">
+      <img src="assets/icons/horario.png">
+    </div>
+    <!-- <span class="copyright">
+                &copy; Copyright 2021 GRINGO BURGER todos los derechos reservados
+            </span> -->
+  </footer>
+
+</body>
+
+</html>

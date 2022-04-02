@@ -1,0 +1,498 @@
+body{
+    margin: 0 17.5 0 17.5;
+    padding: 0px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#ffffff ;
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+p{
+    text-decoration-style:none ;
+}
+header{
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    background-color:#ffffff ;
+    position: fixed;
+    top: -5px;
+    box-shadow: 0 3px 3px 0 #20212447;
+    z-index: 50;
+}
+/*  LOGO  */
+header .izquierda{
+    margin-left: 2.5%;
+    margin-top: 10px;
+}
+header .izquierda a img{
+    width: 190px;
+    height: 80px;
+    
+}
+/*  NAV BAR*/
+ header .derecha{
+    padding-right: 50px;
+    justify-content: flex-end;   
+    margin: auto;    
+    width: inherit;
+    display: flex; 
+    vertical-align: middle;
+}
+header .derecha ul li a{
+    display: block;
+    
+    
+   
+}
+header .derecha ul li {
+    margin: auto;
+    
+}
+header .derecha ul a.inicio{
+    border-bottom: 3px solid #bdc3e5; 
+}
+header .derecha li a.barra:hover{        
+    border-bottom: 3px solid rgb(189, 195, 229); 
+}
+
+
+header nav .navBar{    
+    display: flex;
+    list-style: none;    
+}
+header nav .navBar a{
+    margin-right: 10px;
+    color: #000000;
+    
+    
+}
+header nav .navBar .menu-icon{
+    /* background-image: url('assets/Logo\ el\ gringo\ burguer.png'); */
+
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+header nav .navBar img{
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    align-items: baseline;
+}
+
+header nav .navBar img:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+/* h2{
+    text-align-last: center;
+    font-size: xx-large;
+} */
+
+
+
+main{
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+/* main .carrusel{
+   
+    width: 100%;
+   height: 400px; 
+    background-color:rgba(214, 68, 68, 0.616) ; 
+   background-image: url('assets/cabecera-hamburguesas.jpg');
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   background-size: cover;
+} */
+main p{
+    text-align: center ;
+    font-size: x-large; 
+    
+}
+
+/* --  SECCTION :LAS MÁS PEDIDAS*/
+main .title{
+    margin-bottom: 50px;
+    margin-top: 600px;
+}
+main .title p{
+    height: 10px;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+section.favorites{
+    /* display: flex; */
+    justify-content: center;
+    /* border: 2px solid tomato; */
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+    
+}
+section div.item-container{
+    /* border: 2px solid #20212447; */
+    box-shadow: 0 1px 6px 0 #20212447;
+    padding: 0;
+    height: 330px;
+    width:330px ;
+    
+}
+section .sellest{
+    padding: 20px 20px 20px 0;
+    height: 150px;
+    background-color: rgb(250, 220, 209) ;
+    text-align: center;
+    
+}
+section .sellest .sellestPhoto {
+    /* width: 300px; */
+    height: 165px;
+    z-index: 100;
+    
+}
+/* section .sellest .sellestPhoto:hover{
+    opacity: 190%;
+    z-index: 10;
+    filter: grayscale(80%)
+    /* background-color:rgba(97, 48, 48, 0.116) ; 
+} */
+section .sellest .blur{
+    display: flex;
+    
+    text-align: center;
+    vertical-align: middle;
+    height: 189px;
+    width: 330px;
+    
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: -189px;
+    z-index: 1;
+    
+    
+
+}
+section .sellest .blur:hover{
+    z-index: 100;
+    background-color:rgba(0, 0, 0, 0.294);
+    filter: grayscale(10%)   
+}
+section .sellest .blur:hover > #boton{
+    display: block;
+}
+section .sellest span{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    /* background-color:rgb(253, 237, 255) ; */
+    margin-top: 90px;
+    margin-left: 80px;
+    z-index: 1;
+    /* background-color: rgba(5, 5, 5, 0.335); */
+    background-color: rgb(136, 136, 136);
+    display: none;
+    
+}
+section .sellest span:hover{
+    background-color:rgba(255, 255, 255, 0.87);
+    
+}
+section .sellest span:active{
+    background-color:rgb(189, 195, 229);
+}
+section a.sellestPhoto{
+    width: 180px;
+    height: 120px;
+}
+section .specification{
+    justify-content: center;
+    width: 230px;
+    margin: auto;
+    
+} 
+section .starScore{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .specification form {
+    /* width: 250px; */
+    width: auto;
+    margin: 0 auto;
+    /* height: 50px; */
+} 
+section .specification form p {
+    text-align: center;
+}  
+section .specification form label {
+    font-size: 20px;
+} 
+section .specification form input[type="radio"] {
+    display: none;
+}  
+section .specification form label {
+    color: orange;
+}
+section p{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: black;
+    
+}
+
+
+
+/* -- MORE OF US --*/
+aside {
+    border-top: 2px solid #6667a2;
+    width: 100%;
+    height: 800px;
+    color: #6667a2;
+}
+aside h2{
+    margin-left: 5%;
+    margin-top: 20px;
+}
+aside .content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+aside .map{
+    display: flex;
+    margin: 0px 70px;
+    height: 300px;
+    justify-content: space-evenly;
+    
+    padding: 20px;
+    
+    /* margin-right: 15%; */
+}
+aside .map div.map-right{
+    margin-right: 3%;
+    text-align: end;
+}
+aside .map p{
+    font-size: 50px;
+    text-align:right ;
+    width: 530px;
+    margin-right: 20%;
+    margin-top: 0;
+    
+    
+}
+aside .map .locationIcon{
+    background-image:url('assets/icons/location.png') ;
+    background-repeat:no-repeat ;
+    background-position:center ;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    
+}
+aside .map .map-right span{
+    font-size: 20px;
+    padding: 20px;
+    /* margin: 0px 20px; */
+    /* border: 2px solid blue; */
+    
+}
+aside .video{
+    display: flex;
+    justify-content: space-between;
+}
+aside .video .info{
+    
+    width: 400px;
+    height: 300px;
+    margin-left: 15px;
+    padding:0 60px 0 60px;
+    
+}
+aside .video .info h2{
+    font-size: 40px;
+    /* text-align: left; */
+    width: 600px;
+    
+}
+aside .video .info p{
+    text-align:left ;
+    font-size: 20px;
+    margin-left: 50px;
+}
+aside .video{
+    /* width: 240px;
+    height: 240px; */
+    /* border: 2px solid thistle; */
+    padding: 20px;
+    margin:20px;
+    margin-right: 5%;
+    justify-content: space-evenly;
+}
+aside .video #delivery{
+    /* width: 500px;
+    height: 300px; */
+    margin-right: 160px;
+    padding: 0 80px 0 200px;
+    
+}
+
+
+/*-- FOOTER --*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fadcd1;
+    padding-right: 0;
+    padding: 0 0 20px 0;
+    height: auto;
+
+}
+footer .footer-left {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+footer .footer-left h4{
+    text-align: left;
+    font-size: 25px;
+    
+    margin: 0 0 18px 0;
+}
+footer .footer-left p{
+    margin: 0px 0px;
+    text-align: left;
+    text-decoration-style: none;
+    font-size: 20px;
+    
+}
+footer .footer-left p a{
+    color: black;
+}
+footer .footer-middle{
+    margin-left: 20px;
+}
+footer .footer-middle .logo-footer{
+    text-align: center;
+    /* border: 2px solid red; */
+    height: auto;
+}
+footer .footer-middle .logo-footer a img{
+    width: 190px;
+    height: 80px;
+    padding: 0;
+}
+footer .footer-middle .follow{
+    display: flex;
+    justify-content: center;
+    height: px;
+    /* margin: 5px; */
+}
+footer .footer-middle .follow h3{
+    margin-top: 18px;
+}
+
+footer .footer-middle .footer-icon div{
+    justify-content: center;
+
+    /* width: 40px;
+    height: 40px; */
+    padding: 0;
+    
+}
+footer .footer-middle .insta{
+    background-image: url("assets/icons/logotipo-de-instagram.png");
+    background-size: cover;
+    
+    z-index: 100;
+    
+}
+footer .footer-middle .insta:hover{
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+    background-image:url("assets/icons/instagram.png") ;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    z-index: 120;
+    /* border-radius: 15px; */
+    /* padding: 0; */    
+}
+footer .footer-middle .face{
+    background-image: url("assets/icons/facebook.png");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    
+}
+
+footer .footer-middle .face:hover{
+    /* background-color: #0e8df2; */
+    border-radius: 50%;
+    background-image: url("assets/icons/facebook2.png");
+    background-size: cover;
+    z-index: 120;
+    width: 40px;
+    height: 40px;
+    
+
+}
+footer .footer-middle .whats{
+    background-image: url("assets/icons/whatsapp.png");
+    background-size: cover;
+    width: 49px;
+    height: 49px; 
+    z-index: 100;
+    
+}
+footer .footer-middle .whats:hover{
+    background-image: url("assets/icons/whatsapp2.png");
+    background-size: cover;
+    z-index: 120;
+}
+
+
+footer .footer-middle .follow{
+    text-align: center;
+}
+footer .footer-middle .footer-icon{
+    display: flex;
+    width: 120;
+    
+    justify-content: center;
+}
+footer .footer-right{
+    text-align: center;
+    padding-right: 30px;
+    font-size: larger;
+}
+footer .footer-right img{
+    margin-top: 40px;
+    margin-right: 50px;
+}
